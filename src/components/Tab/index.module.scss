@@ -79,6 +79,9 @@
           &__listItem2 {
             opacity: 0;
             transition: 0.3s ease-in-out;
+            @media (max-width: 768px) {
+              opacity: 1;
+            }
             &__btn1 {
               > i {
                 padding: 5px;
@@ -121,15 +124,16 @@
       }
     }
   }
-}
 
-.active {
-  border-bottom: 6px solid lightsalmon;
-}
+  @media (max-width: 768px) {
+    &__container {
+      padding: 10px;
+    }
 
-.red {
-  color: red;
-}
-.green {
-  color: green;
+    &__ul {
+      > ul {
+        flex-direction: column;
+      }
+    }
+  }
 }

@@ -34,7 +34,6 @@ function Tab() {
   };
 
   const filteredStockData = stockData[0].filter((item) => item.name.toLowerCase().includes(searchQuery.toLowerCase()));
-  // console.log(filteredStockData);
 
   const renderListItem = (item, handleWishList, handleOrder) => {
     return (
